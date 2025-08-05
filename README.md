@@ -25,6 +25,7 @@ Transform your solo business into a professionally-managed enterprise with syste
 ### Core Architecture
 - **12 Specialized Business Agents**: Expert AI specialists for all business functions
 - **18 Mission Workflows**: Systematic business processes for consistent execution
+- **Command Interface**: `/coord` for mission orchestration, `/meeting` for conversational planning
 - **Professional Infrastructure**: Acquisition-ready business document management with 562 files/folders
 - **Agent-11 Compliant**: Optimized for Claude Code environment with 95%+ performance
 
@@ -136,23 +137,33 @@ EMPIRE-11 maintains acquisition-ready business management with:
 
 ## QUICK START
 
-### 1. Load Core Agents
-Start by loading the essential coordination team:
+### 1. Mission Coordination
+Execute systematic business operations:
 ```bash
-# Load the mission commander
-@chief
+# Interactive mission selection
+/coord
 
-# Load strategic foundation
-@strategy @execution @analytics
+# Daily business coordination
+/coord daily_standup
 
-# Begin daily operations
-@chief DAILY_STANDUP
+# Marketing campaign execution
+/coord campaign_launch marketing-brief.md
+
+# Quarterly business review
+/coord quarterly_review financial-data.md
 ```
 
-### 2. Execute Your First Mission
-Launch a marketing campaign in minutes:
+### 2. Conversational Planning
+Strategic discussions with specialists:
 ```bash
-@chief CAMPAIGN_LAUNCH "Product Launch Q1" target_audience="enterprise_customers"
+# Brainstorm with marketing specialist
+/meeting @marketing "new product positioning ideas"
+
+# Financial planning session
+/meeting @finance "Q1 budget optimization"
+
+# Strategic planning discussion
+/meeting @strategy "market expansion opportunities"
 ```
 
 ### 3. Scale Business Operations
@@ -293,11 +304,46 @@ Add specialized functions as needed:
 - **MISSION_RELEASE** - Product release coordination and market launch
 - **MISSION_DOCUMENT** - Business documentation and knowledge management
 
+## COMMAND REFERENCE
+
+### `/coord` - Mission Orchestration
+Systematic execution of complex business operations through multi-agent coordination.
+
+```bash
+# Interactive mission selection
+/coord
+
+# Execute specific business mission
+/coord daily_standup
+/coord campaign_launch marketing-brief.md
+/coord quarterly_review financial-data.md market-analysis.md
+/coord business_opportunity_assessment opportunity-brief.md
+
+# Available missions:
+# daily_standup, weekly_planning, campaign_launch, 
+# business_opportunity_assessment, quarterly_review,
+# product_development, operation_genesis, build, fix, optimize
+```
+
+### `/meeting` - Conversational Planning
+Natural strategic discussions with business specialists for brainstorming and planning.
+
+```bash
+# Start meeting with specialist
+/meeting @marketing
+/meeting @finance "Q1 budget planning"
+/meeting @strategy "new market opportunities"
+
+# Available specialists:
+# @strategy, @execution, @analytics, @marketing, @sales, 
+# @customer, @operations, @content, @pr, @finance, @legal
+```
+
 ## USAGE EXAMPLES
 
-### Executive Daily Standup
+### Daily Business Coordination
 ```bash
-@chief DAILY_STANDUP
+/coord daily_standup
 
 # Automated 15-minute session covering:
 # - Strategic priority alignment
@@ -306,26 +352,34 @@ Add specialized functions as needed:
 # - Next steps and accountability
 ```
 
-### Launch Marketing Campaign
+### Marketing Campaign Launch
 ```bash
-@chief CAMPAIGN_LAUNCH "Q1 Product Launch" 
-  --target_audience="enterprise_customers"
-  --budget="50000"
-  --timeline="4_weeks"
+/coord campaign_launch "Q1 Product Launch" marketing-brief.md
 
 # Coordinates: @marketing @content @pr @analytics
 # Delivers: Strategy, assets, tracking, results
 ```
 
-### Quarterly Business Review
+### Strategic Planning Session
 ```bash
-@chief QUARTERLY_REVIEW Q1_2024
+/meeting @strategy "market expansion into Europe"
 
-# Comprehensive analysis including:
-# - Financial performance and projections
-# - Market position and competitive analysis
-# - Strategic recommendations and next steps
-# - Acquisition readiness assessment
+# Natural conversation covering:
+# - Market analysis and opportunity assessment
+# - Competitive landscape evaluation
+# - Resource requirements and timeline
+# - Risk assessment and mitigation strategies
+```
+
+### Financial Planning Discussion
+```bash
+/meeting @finance "optimizing cash flow for growth"
+
+# Collaborative exploration of:
+# - Current financial position analysis
+# - Growth investment priorities
+# - Cash flow optimization strategies
+# - Financial risk management approaches
 ```
 
 ### Business Opportunity Assessment
