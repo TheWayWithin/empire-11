@@ -4,10 +4,30 @@
 
 EMPIRE-11 provides 12 specialized business agents that coordinate through systematic mission workflows to deliver professional business operations with zero learning curve.
 
-## ⚡ ONE-LINE DEPLOYMENT
+## ⚡ BUSINESS-LOCAL DEPLOYMENT
 
+**Transform any directory into a professional business operations center**
+
+### Step 1: Navigate to your business workspace
 ```bash
-# Clone and setup EMPIRE-11
+cd /path/to/your/business
+```
+
+### Step 2: Deploy your business squad (choose one)
+```bash
+# Core Business Squad (8 agents) - RECOMMENDED for most businesses
+curl -sSL https://raw.githubusercontent.com/TheWayWithin/empire-11/main/deployment/scripts/install.sh | bash -s core
+
+# Full C-Suite Squad (12 agents) - For acquisition-ready operations  
+curl -sSL https://raw.githubusercontent.com/TheWayWithin/empire-11/main/deployment/scripts/install.sh | bash -s full
+
+# Minimal Squad (4 agents) - For startups and quick setup
+curl -sSL https://raw.githubusercontent.com/TheWayWithin/empire-11/main/deployment/scripts/install.sh | bash -s minimal
+```
+
+### Alternative: Repository Clone Deployment
+```bash
+# Clone and setup EMPIRE-11 (legacy method)
 git clone https://github.com/TheWayWithin/empire-11.git && cd empire-11 && chmod +x deploy.sh && ./deploy.sh
 ```
 

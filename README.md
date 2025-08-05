@@ -65,12 +65,32 @@ Transform your solo business into a professionally-managed enterprise with syste
 **Strategic Management**
 - `QUARTERLY_REVIEW` - Comprehensive business assessment
 
-## QUICK START
+## 🚀 Business-Local Deployment
+Business-Local Agents · No Global Pollution · Professional Isolation
 
-1. **Load Core Agents**: Start with @chief, @strategy, @execution, @analytics
-2. **Run Daily Standup**: Use `@chief DAILY_STANDUP` for immediate coordination
-3. **Execute Missions**: Coordinate business activities through mission workflows
-4. **Scale Operations**: Add specialized agents as business needs grow
+### Step 1: Navigate to your business workspace (required)
+```bash
+cd /path/to/your/business
+```
+
+### Step 2: Deploy your business squad
+```bash
+# Core Business Squad (8 agents) - Recommended for most businesses
+curl -sSL https://raw.githubusercontent.com/TheWayWithin/empire-11/main/deployment/scripts/install.sh | bash -s core
+
+# Full C-Suite Squad (12 agents) - For acquisition-ready businesses  
+curl -sSL https://raw.githubusercontent.com/TheWayWithin/empire-11/main/deployment/scripts/install.sh | bash -s full
+
+# Minimal Squad (4 agents) - For startups and quick business setup
+curl -sSL https://raw.githubusercontent.com/TheWayWithin/empire-11/main/deployment/scripts/install.sh | bash -s minimal
+```
+
+### Step 3: Execute immediate business coordination
+```bash
+@chief DAILY_STANDUP
+```
+
+**Result**: Professional business operations in 15 minutes with zero learning curve.
 
 ## AGENT-11 COMPLIANCE
 
