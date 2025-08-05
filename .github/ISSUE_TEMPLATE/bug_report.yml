@@ -1,0 +1,87 @@
+name: 🐛 Bug Report
+description: Report a bug or issue with EMPIRE-11 business agents or missions
+title: "[BUG] "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🐛 Bug Report
+        Help us improve EMPIRE-11 by reporting bugs in agent coordination or business mission execution.
+        
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: Clear description of the bug and its impact on business operations
+      placeholder: Describe what happened and what you expected to happen
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: agent
+    attributes:
+      label: Affected Agent
+      description: Which business agent is experiencing the issue?
+      options:
+        - "@chief - Business mission commander"
+        - "@strategy - Strategic advisor" 
+        - "@execution - Daily execution partner"
+        - "@analytics - Business intelligence"
+        - "@marketing - Marketing strategist"
+        - "@sales - Revenue operations"
+        - "@customer - Customer success"
+        - "@operations - Operations manager"
+        - "@content - Content director"
+        - "@pr - Public relations"
+        - "@finance - Financial operations"
+        - "@legal - Legal & risk management"
+        - "Mission coordination"
+        - "Documentation"
+        - "Other"
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: mission
+    attributes:
+      label: Business Mission
+      description: Which mission was being executed when the bug occurred?
+      options:
+        - "DAILY_STANDUP"
+        - "WEEKLY_PLANNING"
+        - "CAMPAIGN_LAUNCH"
+        - "BUSINESS_OPPORTUNITY_ASSESSMENT"
+        - "PRODUCT_DEVELOPMENT" 
+        - "ISSUE_MANAGEMENT"
+        - "QUARTERLY_REVIEW"
+        - "GROWTH_PLANNING"
+        - "Not applicable"
+        
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this bug?
+      placeholder: |
+        1. Load agent...
+        2. Execute mission...
+        3. Error occurs at...
+    validations:
+      required: true
+      
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Business Impact
+      description: What should have happened from a business operations perspective?
+      
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment Details
+      description: |
+        - EMPIRE-11 version:
+        - Claude Code version:
+        - Operating system:
+        - Business context:

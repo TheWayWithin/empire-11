@@ -1,0 +1,73 @@
+{
+  "name": "EMPIRE-11",
+  "description": "AI-Powered Business Operations Suite - 12 specialized business agents for systematic solopreneur operations",
+  "agents": [
+    {
+      "name": "chief",
+      "description": "Business mission commander - Pure coordination and strategic oversight",
+      "path": "agents/chief.md"
+    },
+    {
+      "name": "strategy", 
+      "description": "Strategic advisor (SAGE) - Long-term planning and market positioning",
+      "path": "agents/strategy.md"
+    },
+    {
+      "name": "execution",
+      "description": "Daily execution partner (ALEX) - Task management and productivity optimization", 
+      "path": "agents/execution.md"
+    },
+    {
+      "name": "analytics",
+      "description": "Business intelligence (KAI) - Data analysis and performance tracking",
+      "path": "agents/analytics.md"
+    },
+    {
+      "name": "marketing",
+      "description": "Marketing strategist (ASTRA) - Brand development and customer acquisition",
+      "path": "agents/marketing.md"
+    },
+    {
+      "name": "sales",
+      "description": "Revenue operations (NOVA) - Sales optimization and pipeline management",
+      "path": "agents/sales.md"
+    },
+    {
+      "name": "customer",
+      "description": "Customer success (LUNA) - Retention and satisfaction optimization",
+      "path": "agents/customer.md"
+    },
+    {
+      "name": "operations",
+      "description": "Operations manager (PHOENIX) - Process optimization and efficiency",
+      "path": "agents/operations.md"
+    },
+    {
+      "name": "content",
+      "description": "Content director (BOB) - Content strategy and thought leadership",
+      "path": "agents/content.md"
+    },
+    {
+      "name": "pr",
+      "description": "Public relations (ECHO) - Reputation management and communications",
+      "path": "agents/pr.md"
+    },
+    {
+      "name": "finance",
+      "description": "Financial operations (ZARA) - Budget planning and financial analysis",
+      "path": "agents/finance.md"
+    },
+    {
+      "name": "legal",
+      "description": "Legal & risk (REX) - Compliance and risk management",
+      "path": "agents/legal.md"
+    }
+  ],
+  "missions": [
+    "missions/daily-standup.md",
+    "missions/weekly-planning.md", 
+    "missions/campaign-launch.md",
+    "missions/business-opportunity-assessment.md",
+    "missions/quarterly-review.md"
+  ]
+}

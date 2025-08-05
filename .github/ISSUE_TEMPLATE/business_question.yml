@@ -1,0 +1,56 @@
+name: ❓ Business Operations Question
+description: Get help with EMPIRE-11 implementation or business coordination
+title: "[QUESTION] "
+labels: ["question", "help-wanted"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ❓ Business Operations Question
+        Need help implementing EMPIRE-11 for your business or optimizing agent coordination?
+        
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Question Topic
+      description: What area does your question relate to?
+      options:
+        - "Agent coordination and mission execution"
+        - "Business setup and configuration"
+        - "Mission workflow optimization"
+        - "Agent customization for industry"
+        - "Integration with existing systems"
+        - "Best practices and strategies"
+        - "Troubleshooting coordination issues"
+        - "Documentation clarification"
+        - "Other"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: What specific help do you need with EMPIRE-11?
+      placeholder: Ask your question about business operations, agent coordination, or mission execution
+    validations:
+      required: true
+      
+  - type: textarea
+    id: context
+    attributes:
+      label: Business Context
+      description: Tell us about your business and what you're trying to achieve
+      placeholder: |
+        - Type of business:
+        - Current business operations challenges:
+        - What you've tried so far:
+        
+  - type: textarea
+    id: current-setup
+    attributes:
+      label: Current EMPIRE-11 Setup
+      description: |
+        - Which agents are you using?
+        - What missions have you tried?
+        - Any configuration details?

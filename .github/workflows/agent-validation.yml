@@ -1,0 +1,149 @@
+name: 🤖 Agent-11 Compliance Validation
+
+on:
+  push:
+    branches: [ main, develop ]
+    paths: 
+      - 'agents/**'
+      - 'missions/**'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'agents/**'
+      - 'missions/**'
+
+jobs:
+  validate-agents:
+    name: Validate Business Agents
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Validate Agent-11 Compliance
+      run: |
+        echo "🔍 Validating EMPIRE-11 Business Agents..."
+        
+        # Check agent files exist
+        AGENTS=(chief strategy execution analytics marketing sales customer operations content pr finance legal)
+        for agent in "${AGENTS[@]}"; do
+          if [ ! -f "agents/$agent.md" ]; then
+            echo "❌ Missing agent: $agent.md"
+            exit 1
+          fi
+          echo "✅ Found agent: $agent.md"
+        done
+        
+        # Validate agent format compliance
+        for agent_file in agents/*.md; do
+          if [ -f "$agent_file" ]; then
+            echo "🔍 Validating $(basename $agent_file)..."
+            
+            # Check for metadata header
+            if ! grep -q "^---" "$agent_file"; then
+              echo "❌ Missing metadata header in $agent_file"
+              exit 1
+            fi
+            
+            # Check for required fields
+            if ! grep -q "^name:" "$agent_file"; then
+              echo "❌ Missing name field in $agent_file"
+              exit 1
+            fi
+            
+            if ! grep -q "^description:" "$agent_file"; then
+              echo "❌ Missing description field in $agent_file"
+              exit 1
+            fi
+            
+            # Check line count (<150 lines for Agent-11 compliance)
+            line_count=$(wc -l < "$agent_file")
+            if [ $line_count -gt 150 ]; then
+              echo "❌ Agent $agent_file exceeds 150 lines ($line_count lines)"
+              exit 1
+            fi
+            
+            echo "✅ Agent $(basename $agent_file) is compliant ($line_count lines)"
+          fi
+        done
+        
+        echo "🎉 All agents are Agent-11 compliant!"
+        
+  validate-missions:
+    name: Validate Business Missions
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Validate Mission Library
+      run: |
+        echo "🎯 Validating EMPIRE-11 Mission Library..."
+        
+        # Check core mission files exist
+        MISSIONS=(daily-standup weekly-planning campaign-launch business-opportunity-assessment product-development issue-management quarterly-review growth-planning)
+        for mission in "${MISSIONS[@]}"; do
+          if [ ! -f "missions/$mission.md" ]; then
+            echo "❌ Missing mission: $mission.md"
+            exit 1
+          fi
+          echo "✅ Found mission: $mission.md"
+        done
+        
+        # Validate mission structure
+        for mission_file in missions/*.md; do
+          if [ -f "$mission_file" ] && [[ $(basename "$mission_file") != "README.md" ]] && [[ $(basename "$mission_file") != "library.md" ]]; then
+            echo "🔍 Validating $(basename $mission_file)..."
+            
+            # Check for required sections
+            if ! grep -q "MISSION OBJECTIVE" "$mission_file"; then
+              echo "❌ Missing MISSION OBJECTIVE in $mission_file"
+              exit 1
+            fi
+            
+            if ! grep -q "AGENT COORDINATION SEQUENCE" "$mission_file"; then
+              echo "❌ Missing AGENT COORDINATION SEQUENCE in $mission_file"
+              exit 1
+            fi
+            
+            if ! grep -q "SUCCESS CRITERIA" "$mission_file"; then
+              echo "❌ Missing SUCCESS CRITERIA in $mission_file"
+              exit 1
+            fi
+            
+            echo "✅ Mission $(basename $mission_file) structure validated"
+          fi
+        done
+        
+        echo "🎉 All missions are properly structured!"
+        
+  validate-documentation:
+    name: Validate Documentation Quality
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Check Documentation Completeness
+      run: |
+        echo "📚 Validating EMPIRE-11 Documentation..."
+        
+        # Check core documentation files
+        DOCS=(README.md QUICK-START.md INSTALLATION.md MISSION-LIBRARY.md USER-GUIDE.md CONTRIBUTING.md)
+        for doc in "${DOCS[@]}"; do
+          if [ ! -f "$doc" ]; then
+            echo "❌ Missing documentation: $doc"
+            exit 1
+          fi
+          echo "✅ Found documentation: $doc"
+        done
+        
+        # Check for professional badges in README
+        if ! grep -q "shield" README.md; then
+          echo "⚠️ README.md missing professional badges"
+        fi
+        
+        echo "🎉 Documentation validation complete!"

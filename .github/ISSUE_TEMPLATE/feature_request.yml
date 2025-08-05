@@ -1,0 +1,72 @@
+name: ✨ Feature Request
+description: Suggest new business agent capabilities or mission workflows
+title: "[FEATURE] "
+labels: ["enhancement", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ✨ Feature Request
+        Help expand EMPIRE-11's business operations capabilities with new agent features or mission workflows.
+        
+  - type: textarea
+    id: business-need
+    attributes:
+      label: Business Need
+      description: What business challenge would this feature solve?
+      placeholder: Describe the business operations gap or opportunity this addresses
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: category
+    attributes:
+      label: Feature Category
+      description: What type of enhancement is this?
+      options:
+        - "New Business Agent"
+        - "Agent Enhancement"
+        - "New Mission Workflow"
+        - "Mission Optimization"
+        - "Documentation Improvement"
+        - "Integration Enhancement"
+        - "Business Template"
+        - "Other"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: How should this feature work from a business operations perspective?
+      placeholder: Describe the desired functionality and business impact
+    validations:
+      required: true
+      
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative Approaches
+      description: Are there other ways to address this business need?
+      
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Business Priority
+      description: How critical is this for business operations?
+      options:
+        - "Critical - Blocks core business operations"
+        - "High - Significant business impact"
+        - "Medium - Improves efficiency"
+        - "Low - Nice to have"
+        
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Implementation Considerations
+      description: |
+        - Which agents would be involved?
+        - Agent-11 compliance requirements?
+        - Mission coordination impact?
+        - Business document changes needed?
