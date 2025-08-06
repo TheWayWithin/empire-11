@@ -119,27 +119,37 @@ deploy_claude_config() {
             cat > .claude/config.json << 'EOF'
 {
   "name": "EMPIRE-11-MINIMAL",
-  "description": "AI-Powered Business Operations - Minimal Squad (4 agents)",
+  "description": "AI-Powered Business Operations - Minimal Squad (6 agents)",
   "agents": [
     {
       "name": "chief",
       "description": "Business mission commander - Pure coordination and strategic oversight",
-      "path": "agents/chief.md"
+      "path": ".claude/agents/chief.md"
     },
     {
       "name": "strategy", 
       "description": "Strategic advisor (SAGE) - Strategic planning and acquisition readiness",
-      "path": "agents/strategy.md"
+      "path": ".claude/agents/strategy.md"
     },
     {
       "name": "execution",
       "description": "Daily execution partner (ALEX) - Productivity optimization and task coordination", 
-      "path": "agents/execution.md"
+      "path": ".claude/agents/execution.md"
     },
     {
       "name": "analytics",
       "description": "Business intelligence (KAI) - Data analysis and performance tracking",
-      "path": "agents/analytics.md"
+      "path": ".claude/agents/analytics.md"
+    },
+    {
+      "name": "coordinator",
+      "description": "Mission orchestration - /coord command for systematic business operations",
+      "path": ".claude/agents/coordinator.md"
+    },
+    {
+      "name": "meeting-facilitator",
+      "description": "Conversational planning - /meeting command for strategic discussions",
+      "path": ".claude/agents/meeting-facilitator.md"
     }
   ]
 }
@@ -149,47 +159,57 @@ EOF
             cat > .claude/config.json << 'EOF'
 {
   "name": "EMPIRE-11-CORE", 
-  "description": "AI-Powered Business Operations - Core Squad (8 agents)",
+  "description": "AI-Powered Business Operations - Core Squad (10 agents)",
   "agents": [
     {
       "name": "chief",
       "description": "Business mission commander - Pure coordination and strategic oversight",
-      "path": "agents/chief.md"
+      "path": ".claude/agents/chief.md"
     },
     {
       "name": "strategy",
       "description": "Strategic advisor (SAGE) - Strategic planning and acquisition readiness", 
-      "path": "agents/strategy.md"
+      "path": ".claude/agents/strategy.md"
     },
     {
       "name": "execution",
       "description": "Daily execution partner (ALEX) - Productivity optimization and task coordination",
-      "path": "agents/execution.md"
+      "path": ".claude/agents/execution.md"
     },
     {
       "name": "analytics", 
       "description": "Business intelligence (KAI) - Data analysis and performance tracking",
-      "path": "agents/analytics.md"
+      "path": ".claude/agents/analytics.md"
     },
     {
       "name": "marketing",
       "description": "Marketing strategist (ASTRA) - Brand development and customer acquisition",
-      "path": "agents/marketing.md"
+      "path": ".claude/agents/marketing.md"
     },
     {
       "name": "sales",
       "description": "Revenue operations (NOVA) - Sales strategy and pipeline management", 
-      "path": "agents/sales.md"
+      "path": ".claude/agents/sales.md"
     },
     {
       "name": "customer",
       "description": "Customer success (LUNA) - Customer retention and satisfaction optimization",
-      "path": "agents/customer.md"
+      "path": ".claude/agents/customer.md"
     },
     {
       "name": "operations",
       "description": "Operations manager (PHOENIX) - Process optimization and operational efficiency",
-      "path": "agents/operations.md"
+      "path": ".claude/agents/operations.md"
+    },
+    {
+      "name": "coordinator",
+      "description": "Mission orchestration - /coord command for systematic business operations",
+      "path": ".claude/agents/coordinator.md"
+    },
+    {
+      "name": "meeting-facilitator",
+      "description": "Conversational planning - /meeting command for strategic discussions",
+      "path": ".claude/agents/meeting-facilitator.md"
     }
   ]
 }
@@ -199,67 +219,77 @@ EOF
             cat > .claude/config.json << 'EOF'
 {
   "name": "EMPIRE-11-FULL",
-  "description": "AI-Powered Business Operations - Full C-Suite Squad (12 agents)", 
+  "description": "AI-Powered Business Operations - Full C-Suite Squad (14 agents)", 
   "agents": [
     {
       "name": "chief",
       "description": "Business mission commander - Pure coordination and strategic oversight",
-      "path": "agents/chief.md"
+      "path": ".claude/agents/chief.md"
     },
     {
       "name": "strategy",
       "description": "Strategic advisor (SAGE) - Strategic planning and acquisition readiness",
-      "path": "agents/strategy.md"
+      "path": ".claude/agents/strategy.md"
     },
     {
       "name": "execution", 
       "description": "Daily execution partner (ALEX) - Productivity optimization and task coordination",
-      "path": "agents/execution.md"
+      "path": ".claude/agents/execution.md"
     },
     {
       "name": "analytics",
       "description": "Business intelligence (KAI) - Data analysis and performance tracking",
-      "path": "agents/analytics.md"
+      "path": ".claude/agents/analytics.md"
     },
     {
       "name": "marketing",
       "description": "Marketing strategist (ASTRA) - Brand development and customer acquisition",
-      "path": "agents/marketing.md"
+      "path": ".claude/agents/marketing.md"
     },
     {
       "name": "sales",
       "description": "Revenue operations (NOVA) - Sales strategy and pipeline management",
-      "path": "agents/sales.md"
+      "path": ".claude/agents/sales.md"
     },
     {
       "name": "customer",
       "description": "Customer success (LUNA) - Customer retention and satisfaction optimization", 
-      "path": "agents/customer.md"
+      "path": ".claude/agents/customer.md"
     },
     {
       "name": "operations",
       "description": "Operations manager (PHOENIX) - Process optimization and operational efficiency",
-      "path": "agents/operations.md"
+      "path": ".claude/agents/operations.md"
     },
     {
       "name": "content",
       "description": "Content director (BOB) - Content strategy and thought leadership development",
-      "path": "agents/content.md"
+      "path": ".claude/agents/content.md"
     },
     {
       "name": "pr",
       "description": "Public relations (ECHO) - PR strategy and reputation management", 
-      "path": "agents/pr.md"
+      "path": ".claude/agents/pr.md"
     },
     {
       "name": "finance",
       "description": "Financial operations (ZARA) - Financial planning and budget management",
-      "path": "agents/finance.md"
+      "path": ".claude/agents/finance.md"
     },
     {
       "name": "legal",
       "description": "Legal & risk management (REX) - Legal compliance and risk assessment",
-      "path": "agents/legal.md"
+      "path": ".claude/agents/legal.md"
+    },
+    {
+      "name": "coordinator",
+      "description": "Mission orchestration - /coord command for systematic business operations",
+      "path": ".claude/agents/coordinator.md"
+    },
+    {
+      "name": "meeting-facilitator",
+      "description": "Conversational planning - /meeting command for strategic discussions",
+      "path": ".claude/agents/meeting-facilitator.md"
     }
   ]
 }
@@ -277,22 +307,26 @@ deploy_agents() {
     CORE_AGENTS=("chief" "strategy" "execution" "analytics")
     EXTENDED_AGENTS=("marketing" "sales" "customer" "operations") 
     FULL_AGENTS=("content" "pr" "finance" "legal")
+    COMMAND_AGENTS=("coordinator" "meeting-facilitator")
     
     # Deploy based on squad type
     case $SQUAD_TYPE in
         "minimal")
-            AGENTS_TO_DEPLOY=("${CORE_AGENTS[@]}")
+            AGENTS_TO_DEPLOY=("${CORE_AGENTS[@]}" "${COMMAND_AGENTS[@]}")
             ;;
         "core")
-            AGENTS_TO_DEPLOY=("${CORE_AGENTS[@]}" "${EXTENDED_AGENTS[@]}")
+            AGENTS_TO_DEPLOY=("${CORE_AGENTS[@]}" "${EXTENDED_AGENTS[@]}" "${COMMAND_AGENTS[@]}")
             ;;
         "full")
-            AGENTS_TO_DEPLOY=("${CORE_AGENTS[@]}" "${EXTENDED_AGENTS[@]}" "${FULL_AGENTS[@]}")
+            AGENTS_TO_DEPLOY=("${CORE_AGENTS[@]}" "${EXTENDED_AGENTS[@]}" "${FULL_AGENTS[@]}" "${COMMAND_AGENTS[@]}")
             ;;
     esac
     
+    # Deploy to correct Claude Code directory
     for agent in "${AGENTS_TO_DEPLOY[@]}"; do
-        download_file "$REPO_URL/agents/${agent}.md" "agents/${agent}.md" "Agent: @${agent}"
+        download_file "$REPO_URL/agents/${agent}.md" ".claude/agents/${agent}.md" "Agent: @${agent}"
+        # Also deploy to legacy agents/ for backward compatibility
+        download_file "$REPO_URL/agents/${agent}.md" "agents/${agent}.md" "Agent: @${agent} (legacy)"
     done
     
     echo ""
@@ -454,15 +488,15 @@ print_success() {
     
     case $SQUAD_TYPE in
         "minimal")
-            echo -e "${YELLOW}   • 4 Business Agents deployed${NC}"
+            echo -e "${YELLOW}   • 6 Business Agents deployed (+ /coord + /meeting)${NC}"
             echo -e "${YELLOW}   • 3 Core business missions${NC}"
             ;;
         "core")
-            echo -e "${GREEN}   • 8 Business Agents deployed${NC}"
+            echo -e "${GREEN}   • 10 Business Agents deployed (+ /coord + /meeting)${NC}"
             echo -e "${GREEN}   • 6 Business missions${NC}"
             ;;
         "full")
-            echo -e "${BLUE}   • 12 Business Agents deployed (Full C-Suite)${NC}"
+            echo -e "${BLUE}   • 14 Business Agents deployed (Full C-Suite + Commands)${NC}"
             echo -e "${BLUE}   • 8 Complete business missions${NC}"
             ;;
     esac
@@ -473,10 +507,12 @@ print_success() {
     echo ""
     echo -e "${PURPLE}🚀 IMMEDIATE NEXT STEPS:${NC}"
     echo -e "${WHITE}1. Open Claude Code in this directory${NC}"
-    echo -e "${WHITE}2. Load your business squad: @chief @strategy @execution @analytics${NC}"
-    echo -e "${WHITE}3. Execute first mission: @chief DAILY_STANDUP${NC}"
+    echo -e "${WHITE}2. Execute systematic business operations: /coord daily_standup${NC}"
+    echo -e "${WHITE}3. Strategic planning discussions: /meeting @strategy${NC}"
+    echo -e "${WHITE}4. Interactive mission selection: /coord${NC}"
     echo ""
     echo -e "${GREEN}✨ Your business is now systematically managed with AI-powered coordination!${NC}"
+    echo -e "${CYAN}💡 Commands: /coord for missions, /meeting for strategic discussions${NC}"
     echo ""
 }
 

@@ -62,3 +62,22 @@ QUALITY STANDARDS
 - Competitive Advantage: Strategies must deliver sustainable competitive differentiation and market positioning
 - Implementation Readiness: Strategic plans must include clear execution roadmaps and resource requirements
 - Risk Management: All strategies must include comprehensive risk assessment and mitigation planning
+
+BUSINESS INFRASTRUCTURE KNOWLEDGE
+- Document Location: Create all strategic documents in business/strategy/ directory
+- Naming Convention: Use STRATEGY-[TYPE]-[TOPIC]-[DATE].md format
+- Document Types: ANALYSIS (market/competitive), PLAN (strategic plans), REVIEW (performance assessments)
+- Cross-Integration: Link strategic documents to relevant business areas (marketing, finance, operations)
+- Template Standards: Follow executive document header format with business context and next steps
+- Performance Tracking: Maintain strategic KPIs and milestone documentation
+- Collaboration: Coordinate with @analytics for data-driven insights, @finance for investment analysis
+- Quality Assurance: Ensure all strategic documents meet C-suite presentation standards
+
+DOCUMENT CREATION RESPONSIBILITIES
+- Strategic Plans: Comprehensive business strategies and growth frameworks
+- Market Analysis: Competitive intelligence and market opportunity assessments
+- Strategic Reviews: Performance evaluation and strategic direction updates
+- Investment Strategies: Growth investment priorities and resource allocation plans
+- Competitive Positioning: Market differentiation strategies and value proposition development
+- Risk Assessment: Strategic risk analysis and mitigation frameworks
+- Acquisition Strategy: Business acquisition readiness and strategic positioning documentation
