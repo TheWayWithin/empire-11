@@ -85,7 +85,47 @@ Transform EMPIRE-11 requirements into production-ready business operations suite
 - [x] deployment/scripts/install.sh - Complete deployment automation  
 - [x] DEPLOYMENT-GUIDE.md - Comprehensive deployment documentation  
 - [x] Updated README.md and QUICK-START.md with deployment commands  
-- [x] Verified working one-line deployment system  
+- [x] Verified working one-line deployment system
+
+### Phase 5: Command System & Infrastructure Enhancement (3 hours)
+**Lead**: @coordinator  
+**Status**: [x] COMPLETED  
+**Objective**: Add /coord and /meeting command system plus business infrastructure  
+
+**Tasks**:
+- [x] Implement /coord command for mission orchestration  
+- [x] Implement /meeting command for conversational planning  
+- [x] Fix deployment script to use correct Claude Code paths (.claude/agents/)  
+- [x] Create comprehensive Business Infrastructure Guide  
+- [x] Update core agents with business infrastructure knowledge  
+- [x] Create professional business document templates  
+- [x] Update deployment configurations and documentation  
+
+**Deliverables**:
+- [x] agents/coordinator.md - Mission orchestration system  
+- [x] agents/meeting-facilitator.md - Conversational planning system  
+- [x] BUSINESS-INFRASTRUCTURE-GUIDE.md - Comprehensive business knowledge  
+- [x] templates/business-document-template.md - Professional document standards  
+- [x] templates/mission-execution-template.md - Mission tracking framework  
+- [x] Updated deployment script with correct paths and command agents  
+- [x] COMMAND-REFERENCE.md - Complete command system documentation
+
+### Phase 6: Critical Deployment Fixes (1 hour)  
+**Lead**: @coordinator  
+**Status**: [x] COMPLETED  
+**Objective**: Resolve Claude Code deployment path issues and business infrastructure gaps
+
+**Critical Issues Resolved**:
+- [x] CRITICAL: Fixed agent deployment path from /agents to /.claude/agents/  
+- [x] MAJOR: Integrated command system agents into all deployment tiers  
+- [x] MAJOR: Added comprehensive business infrastructure knowledge to agents  
+- [x] MINOR: Updated agent counts and documentation to reflect enhancements  
+
+**Business Impact**:
+- [x] Deployment now works correctly with Claude Code  
+- [x] Agents understand Empire-11 business file structure and protocols  
+- [x] Professional business document creation from day one  
+- [x] Systematic business operations with acquisition-ready standards  
 
 ### Phase 5: Original Implementation (SUPERSEDED)
 **Lead**: @developer  
