@@ -76,22 +76,33 @@ cd /path/to/your/business
 
 ### Step 2: Deploy your business squad
 ```bash
-# Core Business Squad (8 agents) - Recommended for most businesses
+# Core Business Squad (10 agents) - Recommended for most businesses
 curl -sSL https://raw.githubusercontent.com/TheWayWithin/empire-11/main/deployment/scripts/install.sh | bash -s core
 
-# Full C-Suite Squad (12 agents) - For acquisition-ready businesses  
+# Full C-Suite Squad (14 agents) - For acquisition-ready businesses  
 curl -sSL https://raw.githubusercontent.com/TheWayWithin/empire-11/main/deployment/scripts/install.sh | bash -s full
 
-# Minimal Squad (4 agents) - For startups and quick business setup
+# Minimal Squad (6 agents) - For startups and quick business setup
 curl -sSL https://raw.githubusercontent.com/TheWayWithin/empire-11/main/deployment/scripts/install.sh | bash -s minimal
 ```
 
+**All deployments now include:**
+- ✅ `/coord` command system for mission orchestration
+- ✅ `/meeting` command system for conversational planning  
+- ✅ Correct Claude Code agent paths (`.claude/agents/`)
+- ✅ Complete business infrastructure knowledge
+- ✅ Professional document templates and protocols
+
 ### Step 3: Execute immediate business coordination
 ```bash
-@chief DAILY_STANDUP
+# Start with systematic mission coordination
+/coord daily_standup
+
+# Or begin strategic planning discussion
+/meeting @strategy
 ```
 
-**Result**: Professional business operations in 15 minutes with zero learning curve.
+**Result**: Professional business operations in 15 minutes with zero learning curve and complete infrastructure.
 
 ## AGENT-11 COMPLIANCE
 
