@@ -66,6 +66,78 @@ Transform your solo business into a professionally-managed enterprise with syste
 **Strategic Management**
 - `QUARTERLY_REVIEW` - Comprehensive business assessment
 
+**MCP Integration**
+- `CONNECT-MCP` - Model Context Protocol setup and agent enhancement
+- `BUSINESS-SETUP` - Enhanced with MCP-first protocols for competitive advantage
+
+## 🔗 MCP INTEGRATION SUITE
+
+**Transform Your Business Operations with Enterprise-Grade Tools**
+
+EMPIRE-11 agents now leverage Model Context Protocol (MCP) for enhanced business intelligence, automated customer management, and competitive advantage through enterprise integrations.
+
+### MCP-Enhanced Agent Capabilities
+
+**🎯 Strategic Intelligence (@strategy)**
+- `mcp__firecrawl`: Automated competitive analysis and market trend extraction
+- `mcp__fetch`: Real-time economic indicators and industry data collection
+- `mcp__context7`: Strategic decision tracking across planning sessions
+- `mcp__memory`: Long-term competitive intelligence and strategic pattern storage
+
+**📈 Marketing Automation (@marketing)**
+- `mcp__gmail`: Automated email campaign management and customer communications
+- `mcp__airtable`: Dynamic customer segmentation and campaign performance tracking
+- `mcp__analytics`: Real-time ROI measurement and conversion funnel analysis
+- `mcp__firecrawl`: Competitor campaign analysis and content trend research
+
+**📊 Business Intelligence (@analytics)**
+- `mcp__postgresql`: Business data extraction and performance metrics analysis
+- `mcp__analytics`: Automated dashboard creation and reporting systems
+- `mcp__context7`: Data lineage tracking and analysis context maintenance
+- `mcp__fetch`: External market benchmarking and competitive intelligence integration
+
+**👥 Customer Experience (@customer)**
+- `mcp__zendesk`: Customer support integration and satisfaction tracking
+- `mcp__airtable`: Customer relationship data management and success metrics
+- `mcp__slack`: Team coordination and customer escalation management
+- `mcp__notion`: Customer success documentation and onboarding processes
+
+### MCP Setup & Usage
+
+**Quick MCP Integration**
+```bash
+# Deploy EMPIRE-11 with MCP readiness
+curl -sSL https://raw.githubusercontent.com/TheWayWithin/empire-11/main/deployment/scripts/install.sh | bash -s core
+
+# Execute MCP connection mission
+/coord connect_mcp
+
+# Verify MCP integration
+/meeting @strategy "analyze competitor pricing with mcp__firecrawl"
+```
+
+**Business Value Immediate**
+- **Competitive Intelligence**: Automated competitor analysis and market research
+- **Customer Management**: Enhanced CRM with automated segmentation and engagement
+- **Performance Analytics**: Real-time business dashboards and trend analysis
+- **Process Automation**: Reduced manual effort through enterprise tool integration
+
+### When to Use MCP Integration
+
+**✅ Use CONNECT-MCP Mission When:**
+- You need competitive intelligence and market research automation
+- Customer management requires advanced segmentation and campaign tracking  
+- Business analytics need real-time dashboards and external data integration
+- Team coordination benefits from enterprise communication tools
+- Strategic planning requires enhanced market intelligence and decision tracking
+
+**📋 MCP Integration Process:**
+1. **Business Assessment** (15 min) - Map MCPs to business objectives
+2. **Strategic Prioritization** (20 min) - ROI analysis and competitive advantage evaluation  
+3. **Technical Coordination** (30 min) - Business requirements for Agent-11 implementation
+4. **Agent Enhancement** (25 min) - MCP-first protocol integration across agents
+5. **Validation & Optimization** (15 min) - Business value measurement and continuous improvement
+
 ## 🚀 Business-Local Deployment
 Business-Local Agents · No Global Pollution · Professional Isolation
 
@@ -315,6 +387,10 @@ Add specialized functions as needed:
 - **MISSION_RELEASE** - Product release coordination and market launch
 - **MISSION_DOCUMENT** - Business documentation and knowledge management
 
+### MCP Integration & Enhancement
+- **CONNECT-MCP** - Model Context Protocol setup and business tool integration
+- **BUSINESS-SETUP** - Enhanced foundation setup with MCP-first protocols for competitive advantage
+
 ## COMMAND REFERENCE
 
 ### `/coord` - Mission Orchestration
@@ -330,10 +406,15 @@ Systematic execution of complex business operations through multi-agent coordina
 /coord quarterly_review financial-data.md market-analysis.md
 /coord business_opportunity_assessment opportunity-brief.md
 
+# MCP Integration missions
+/coord connect_mcp
+/coord business_setup
+
 # Available missions:
 # daily_standup, weekly_planning, campaign_launch, 
 # business_opportunity_assessment, quarterly_review,
-# product_development, operation_genesis, build, fix, optimize
+# connect_mcp, business_setup, product_development, 
+# operation_genesis, build, fix, optimize
 ```
 
 ### `/meeting` - Conversational Planning

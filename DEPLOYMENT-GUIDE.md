@@ -69,6 +69,57 @@ curl -sSL https://raw.githubusercontent.com/TheWayWithin/empire-11/main/deployme
 curl -sSL https://raw.githubusercontent.com/TheWayWithin/empire-11/main/deployment/scripts/install.sh | bash -s full
 ```
 
+## 🔗 MCP INTEGRATION ENHANCEMENT
+
+**Supercharge Your Deployment with Enterprise-Grade Business Tools**
+
+All EMPIRE-11 deployments now include MCP (Model Context Protocol) readiness, enabling your agents to leverage enterprise integrations for competitive advantage.
+
+### MCP-Enhanced Business Capabilities
+
+**Competitive Intelligence**
+- Automated competitor analysis and market research
+- Real-time industry trend monitoring and strategic insights
+- Strategic decision tracking across planning sessions
+
+**Customer Management Automation**  
+- Advanced CRM with dynamic customer segmentation
+- Automated email campaign management and performance tracking
+- Customer support integration with satisfaction monitoring
+
+**Business Analytics & Performance**
+- Real-time business dashboards and KPI tracking
+- External market benchmarking and competitive intelligence
+- Data lineage tracking and institutional knowledge management
+
+### MCP Integration Process
+
+**Option 1: Include with Initial Deployment**
+```bash
+# Deploy with MCP readiness 
+curl -sSL https://raw.githubusercontent.com/TheWayWithin/empire-11/main/deployment/scripts/install.sh | bash -s core
+
+# Initialize with MCP integration
+@chief BUSINESS-SETUP  # Now includes MCP-first protocols
+@chief CONNECT-MCP     # Configure enterprise tool integrations
+```
+
+**Option 2: Add to Existing Deployment**
+```bash
+# Add MCP integration to existing EMPIRE-11
+@chief CONNECT-MCP
+
+# Verify MCP enhancement
+@strategy "analyze competitor pricing strategies with mcp__firecrawl"
+@marketing "segment customers by engagement using mcp__airtable"
+```
+
+**Business Value Timeline**
+- **Day 1**: Competitive intelligence automation active
+- **Week 1**: Customer segmentation and campaign automation operational  
+- **Month 1**: Full business analytics integration with real-time dashboards
+- **Quarter 1**: Complete competitive advantage through enterprise tool integration
+
 ## 🎯 DEPLOYMENT PROCESS
 
 ### Step 1: Create Your Business Project Structure
@@ -193,14 +244,16 @@ curl -sSL https://raw.githubusercontent.com/TheWayWithin/empire-11/main/deployme
 1. **Add Seed Documents** to ideation/ folder (vision, strategy, market research)
 2. **Copy Legacy Materials** to legacy-business/ folder (if applicable)
 3. **Open Claude Code** in your business directory
-4. **Initialize Business Foundation**: `@chief BUSINESS-SETUP`
+4. **Initialize Business Foundation**: `@chief BUSINESS-SETUP` (now includes MCP-first protocols)
 5. **Begin Daily Coordination**: `@chief DAILY_STANDUP`
 
-### First Week Setup (30 minutes)
+### First Week Setup (45 minutes)
 1. **Complete WEEKLY_PLANNING** mission for strategic alignment
-2. **Load Revenue Squad** (@marketing @sales @customer) if using core/full
-3. **Execute CAMPAIGN_LAUNCH** for first systematic marketing coordination
-4. **Document Business Strategy** using generated templates
+2. **Execute MCP Integration**: `@chief CONNECT-MCP` for enterprise tool setup
+3. **Load Revenue Squad** (@marketing @sales @customer) if using core/full
+4. **Execute CAMPAIGN_LAUNCH** for first systematic marketing coordination (MCP-enhanced)
+5. **Document Business Strategy** using generated templates
+6. **Verify MCP Business Value**: Test competitive intelligence and customer segmentation automation
 
 ### Full Professional Operations (Ongoing)
 1. **Daily**: DAILY_STANDUP missions (15 minutes)

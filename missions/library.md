@@ -45,10 +45,17 @@ This library contains standardized mission protocols for common development scen
 
 #### 🏢 BUSINESS-SETUP - Complete Business Foundation
 **File**: `business-setup.md`  
-**Purpose**: Transform deployed EMPIRE-11 into fully configured business operations center  
+**Purpose**: Transform deployed EMPIRE-11 into fully configured business operations center with MCP-first protocols  
 **Duration**: 3-4 hours  
 **Required**: Ideation folder with seed documents  
 **Squad**: Full coordination (@chief, @strategy, @operations, @execution)
+
+#### 🔗 CONNECT-MCP - Enterprise Tool Integration
+**File**: `connect-mcp.md`  
+**Purpose**: Integrate Model Context Protocol tools for competitive advantage and business automation  
+**Duration**: 1.5-2 hours  
+**Required**: Business objectives and available MCP inventory  
+**Squad**: Strategic coordination (@chief, @strategy, @operations, @analytics)
 
 #### 💡 MVP - Minimum Viable Product
 **File**: `mission-mvp.md`  
@@ -102,6 +109,17 @@ This library contains standardized mission protocols for common development scen
 
 # Direct mission with inputs
 /coord [mission-name] [input-files...]
+
+# Business operations missions
+/coord business_setup
+/coord connect_mcp
+/coord daily_standup
+/coord campaign_launch marketing-brief.md
+
+# Development missions
+/coord build requirements.md
+/coord fix bug-report.md
+/coord deploy production.md
 ```
 
 ### Mission Phases

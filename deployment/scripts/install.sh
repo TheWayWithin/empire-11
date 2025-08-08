@@ -97,9 +97,13 @@ create_directory_structure() {
     mkdir -p ideation
     mkdir -p legacy-business/{financials,contracts,marketing-materials,operational-docs,customer-data}
     
+    # NEW: Technical project coordination directories
+    mkdir -p technical-projects/{active,completed,templates,agent-11-info}
+    
     echo -e "${GREEN}✅ Business directory structure created${NC}"
     echo -e "${YELLOW}💡 Add seed documents to ideation/ folder${NC}"
     echo -e "${YELLOW}📁 Copy existing business materials to legacy-business/ folder${NC}"
+    echo -e "${CYAN}🔧 Technical projects will be coordinated through technical-projects/ folder${NC}"
 }
 
 download_file() {
@@ -376,6 +380,11 @@ deploy_templates() {
     download_file "$REPO_URL/templates/progress.md" "templates/progress.md" "Progress Tracking Template"
     download_file "$REPO_URL/templates/project-plan.md" "templates/project-plan.md" "Strategic Project Plan Template"
     download_file "$REPO_URL/templates/technical-requirements-handoff.md" "templates/technical-requirements-handoff.md" "Technical Requirements Handoff Template"
+    
+    # Technical project coordination templates
+    download_file "$REPO_URL/templates/technical-project-business-requirements.md" "technical-projects/templates/business-requirements.md" "Technical Project Business Requirements Template"
+    download_file "$REPO_URL/templates/agent-11-business-case.md" "technical-projects/agent-11-info/business-case.md" "Agent-11 Business Case Template"
+    download_file "$REPO_URL/templates/technical-project-tracking.md" "technical-projects/templates/project-tracking.md" "Technical Project Tracking Template"
     
     # Copy templates to root for immediate use after business-setup mission
     download_file "$REPO_URL/templates/progress.md" "progress.md" "Progress Tracker (active)"
