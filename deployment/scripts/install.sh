@@ -93,7 +93,13 @@ create_directory_structure() {
     mkdir -p docs
     mkdir -p templates
     
+    # NEW: Ideation and legacy business directories
+    mkdir -p ideation
+    mkdir -p legacy-business/{financials,contracts,marketing-materials,operational-docs,customer-data}
+    
     echo -e "${GREEN}✅ Business directory structure created${NC}"
+    echo -e "${YELLOW}💡 Add seed documents to ideation/ folder${NC}"
+    echo -e "${YELLOW}📁 Copy existing business materials to legacy-business/ folder${NC}"
 }
 
 download_file() {
@@ -335,8 +341,8 @@ deploy_agents() {
 deploy_missions() {
     echo -e "${CYAN}🎯 Deploying business missions...${NC}"
     
-    # Core missions for all squad types
-    CORE_MISSIONS=("daily-standup" "weekly-planning" "quarterly-review")
+    # Core missions for all squad types (includes business-setup for initial configuration)
+    CORE_MISSIONS=("business-setup" "daily-standup" "weekly-planning" "quarterly-review")
     EXTENDED_MISSIONS=("campaign-launch" "business-opportunity-assessment" "issue-management")
     FULL_MISSIONS=("product-development" "growth-planning")
     
@@ -359,6 +365,20 @@ deploy_missions() {
     
     # Always include mission library
     download_file "$REPO_URL/missions/library.md" "missions/library.md" "Mission Library"
+    
+    echo ""
+}
+
+deploy_templates() {
+    echo -e "${CYAN}📋 Deploying business templates...${NC}"
+    
+    # Essential templates for business setup and tracking
+    download_file "$REPO_URL/templates/progress.md" "templates/progress.md" "Progress Tracking Template"
+    download_file "$REPO_URL/templates/project-plan.md" "templates/project-plan.md" "Strategic Project Plan Template"
+    
+    # Copy templates to root for immediate use after business-setup mission
+    download_file "$REPO_URL/templates/progress.md" "progress.md" "Progress Tracker (active)"
+    download_file "$REPO_URL/templates/project-plan.md" "project-plan.md" "Project Plan (active)"
     
     echo ""
 }
@@ -506,10 +526,11 @@ print_success() {
     echo -e "${CYAN}   • Documentation and guides included${NC}"
     echo ""
     echo -e "${PURPLE}🚀 IMMEDIATE NEXT STEPS:${NC}"
-    echo -e "${WHITE}1. Open Claude Code in this directory${NC}"
-    echo -e "${WHITE}2. Execute systematic business operations: /coord daily_standup${NC}"
-    echo -e "${WHITE}3. Strategic planning discussions: /meeting @strategy${NC}"
-    echo -e "${WHITE}4. Interactive mission selection: /coord${NC}"
+    echo -e "${WHITE}1. Add seed documents to ideation/ folder (vision, strategy, market research)${NC}"
+    echo -e "${WHITE}2. Copy existing business materials to legacy-business/ folder (if applicable)${NC}"
+    echo -e "${WHITE}3. Open Claude Code in this directory${NC}"
+    echo -e "${WHITE}4. Initialize business foundation: @chief BUSINESS-SETUP${NC}"
+    echo -e "${WHITE}5. Begin daily coordination: @chief DAILY_STANDUP${NC}"
     echo ""
     echo -e "${GREEN}✨ Your business is now systematically managed with AI-powered coordination!${NC}"
     echo -e "${CYAN}💡 Commands: /coord for missions, /meeting for strategic discussions${NC}"
@@ -525,6 +546,7 @@ main() {
     deploy_claude_config
     deploy_agents
     deploy_missions
+    deploy_templates
     deploy_documentation
     create_readme
     print_success

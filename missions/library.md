@@ -41,7 +41,14 @@ This library contains standardized mission protocols for common development scen
 **Required**: System or feature to document  
 **Squad**: Documenter, Developer, Architect
 
-### Strategic Missions
+### Business Setup & Strategic Missions
+
+#### 🏢 BUSINESS-SETUP - Complete Business Foundation
+**File**: `business-setup.md`  
+**Purpose**: Transform deployed EMPIRE-11 into fully configured business operations center  
+**Duration**: 3-4 hours  
+**Required**: Ideation folder with seed documents  
+**Squad**: Full coordination (@chief, @strategy, @operations, @execution)
 
 #### 💡 MVP - Minimum Viable Product
 **File**: `mission-mvp.md`  

@@ -71,15 +71,29 @@ curl -sSL https://raw.githubusercontent.com/TheWayWithin/empire-11/main/deployme
 
 ## 🎯 DEPLOYMENT PROCESS
 
-### Step 1: Choose Your Business Directory
+### Step 1: Create Your Business Project Structure
 ```bash
-# Navigate to any directory you want to transform into a business operations center
-cd /path/to/your/business
+# Create a new business project directory
+mkdir my-business-project && cd my-business-project
 
-# Examples:
-cd ~/my-business
-cd ~/projects/startup-name
-cd ~/workspace/client-work
+# Set up ideation documents (for new business concepts)
+mkdir ideation
+# Add your business seed documents:
+# - vision.md (business vision and mission)
+# - strategy.md (strategic framework)
+# - market-research.md (market analysis)
+# - brand-guidelines.md (brand identity)
+# - competitors.md (competitive analysis)
+# - resources.md (available resources)
+
+# Set up legacy business materials (for existing businesses)
+mkdir legacy-business
+# Copy existing business folders:
+# - legacy-business/financials/ (previous financial documents)
+# - legacy-business/contracts/ (legal agreements)
+# - legacy-business/marketing-materials/ (historical campaigns)
+# - legacy-business/operational-docs/ (SOPs and processes)
+# - legacy-business/customer-data/ (customer analytics)
 ```
 
 ### Step 2: Execute One-Line Deployment
@@ -88,32 +102,44 @@ cd ~/workspace/client-work
 curl -sSL https://raw.githubusercontent.com/TheWayWithin/empire-11/main/deployment/scripts/install.sh | bash -s [SQUAD_TYPE]
 ```
 
-### Step 3: Immediate Business Coordination
+### Step 3: Initialize Business Foundation
 ```bash
-# Open Claude Code in your directory
-# Load your business squad
-# Execute first mission: @chief DAILY_STANDUP
+# Open Claude Code in your business directory
+# Initialize strategic foundation and tracking systems
+@chief BUSINESS-SETUP
+
+# Begin daily operational coordination
+@chief DAILY_STANDUP
 ```
 
 ## 🏗️ WHAT GETS DEPLOYED
 
 ### Directory Structure Created
 ```
-your-business/
+your-business-project/
+├── ideation/                # NEW: Business seed documents
+│   ├── vision.md           # Business vision and mission
+│   ├── strategy.md         # Strategic framework
+│   ├── market-research.md  # Market analysis
+│   └── [other seed docs]
+├── legacy-business/         # NEW: Existing business materials
+│   ├── financials/         # Previous financial documents
+│   ├── contracts/          # Legal agreements
+│   ├── marketing-materials/# Historical campaigns
+│   └── [other legacy folders]
 ├── .claude/
-│   ├── config.json          # Claude Code integration
-│   └── agents/              # Agent backups
-├── agents/                  # Your business squad
-├── missions/                # Business workflow library
-├── business/                # Professional document organization
+│   ├── config.json         # Claude Code integration
+│   └── agents/             # Your business squad
+├── missions/               # Business workflow library
+├── business/               # Professional document organization
 │   ├── strategy/
 │   ├── marketing/
 │   ├── sales/
-│   ├── customer/
 │   └── [other areas based on squad size]
-├── docs/                    # Documentation
-├── templates/               # Business templates
-└── README.md               # Business operations guide
+├── templates/              # Business templates
+├── progress.md             # NEW: Milestone tracking
+├── project-plan.md         # NEW: Strategic roadmap
+└── README.md              # Business operations guide
 ```
 
 ### Claude Code Configuration
@@ -163,11 +189,12 @@ curl -sSL https://raw.githubusercontent.com/TheWayWithin/empire-11/main/deployme
 
 ## 🚀 POST-DEPLOYMENT WORKFLOW
 
-### Immediate Operations (5 minutes)
-1. **Open Claude Code** in your business directory
-2. **Load Core Squad**: @chief @strategy @execution @analytics
-3. **Execute First Mission**: `@chief DAILY_STANDUP`
-4. **Review Results**: Professional 15-minute business coordination
+### Immediate Operations (15 minutes)
+1. **Add Seed Documents** to ideation/ folder (vision, strategy, market research)
+2. **Copy Legacy Materials** to legacy-business/ folder (if applicable)
+3. **Open Claude Code** in your business directory
+4. **Initialize Business Foundation**: `@chief BUSINESS-SETUP`
+5. **Begin Daily Coordination**: `@chief DAILY_STANDUP`
 
 ### First Week Setup (30 minutes)
 1. **Complete WEEKLY_PLANNING** mission for strategic alignment
