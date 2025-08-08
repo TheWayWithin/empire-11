@@ -375,6 +375,7 @@ deploy_templates() {
     # Essential templates for business setup and tracking
     download_file "$REPO_URL/templates/progress.md" "templates/progress.md" "Progress Tracking Template"
     download_file "$REPO_URL/templates/project-plan.md" "templates/project-plan.md" "Strategic Project Plan Template"
+    download_file "$REPO_URL/templates/technical-requirements-handoff.md" "templates/technical-requirements-handoff.md" "Technical Requirements Handoff Template"
     
     # Copy templates to root for immediate use after business-setup mission
     download_file "$REPO_URL/templates/progress.md" "progress.md" "Progress Tracker (active)"

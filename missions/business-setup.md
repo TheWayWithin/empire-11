@@ -4,6 +4,8 @@
 MISSION OBJECTIVE
 Transform a newly deployed EMPIRE-11 installation into a fully configured business operations center with strategic foundation documents, progress tracking systems, and integrated ideation and legacy business materials.
 
+CRITICAL: EMPIRE-11 is BUSINESS-ONLY. This mission establishes business strategy, planning, marketing, and operations infrastructure. Technical development work (coding, software architecture, app building) is handled by separate Agent-11 teams in dedicated technical projects.
+
 SUCCESS CRITERIA
 - Validate and integrate all available ideation seed documents
 - Catalog and organize legacy business materials for agent reference
@@ -49,8 +51,9 @@ Phase 3: Strategic Foundation Development (90 minutes)
 Phase 4: Enterprise Business Plan Creation (120 minutes)
 1. @chief integrates strategic foundation with practical business operations
 2. @chief develops comprehensive Strategic-Plan-Enterprise.md document
-3. @chief creates phased implementation roadmap with milestone definitions
+3. @chief creates phased implementation roadmap with milestone definitions (business activities only)
 4. @chief establishes success metrics and accountability frameworks
+5. @chief identifies technical requirements for handoff to Agent-11 teams (without technical implementation)
 
 Phase 5: Progress Tracking System Implementation (60 minutes)
 1. @execution creates progress.md template with milestone tracking structure
@@ -115,8 +118,18 @@ Enterprise Transformation (20+ employees):
 - Full legacy integration with comprehensive knowledge management systems
 - Weekly progress tracking with monthly strategic realignment protocols
 
+TECHNICAL WORK HANDOFF PROTOCOL
+If business planning identifies need for software development or technical solutions:
+1. @strategy creates high-level business requirements document outlining business objectives
+2. @chief coordinates business requirements review and approval 
+3. Technical requirements are handed to separate Agent-11 development team in dedicated technical project
+4. EMPIRE-11 tracks technical project progress in business project-plan.md
+5. EMPIRE-11 assesses business impact of technical deliverables but NEVER modifies technical work
+6. Business and technical coordination maintained through requirements documents, not direct technical involvement
+
 POST-MISSION COORDINATION
 - Schedule weekly strategic alignment reviews using updated CLAUDE.md protocols
 - Implement quarterly strategic foundation updates based on business evolution
 - Maintain systematic progress tracking with milestone accountability frameworks
 - Execute regular legacy business integration reviews for continuous improvement
+- Coordinate technical project oversight through business requirements and progress tracking

@@ -15,7 +15,17 @@ This is a minimal repository containing only a basic README.md file. The project
 
 ## Business Operations Framework
 
-This is an EMPIRE-11 deployment - an AI-powered business operations system with strategic coordination protocols.
+This is an EMPIRE-11 deployment - an AI-powered BUSINESS operations system with strategic coordination protocols.
+
+### CRITICAL: BUSINESS-ONLY SYSTEM
+
+EMPIRE-11 is designed exclusively for business strategy, planning, marketing, sales, and operations. It NEVER engages in:
+- Software development or coding
+- Technical architecture or system design  
+- Application building or programming tasks
+- Technical debugging or implementation
+
+Technical work is handled by separate Agent-11 teams in dedicated development projects. EMPIRE-11 creates business requirements and tracks technical project progress but never performs technical implementation.
 
 ### Progress Tracking Protocol
 
@@ -39,6 +49,15 @@ This is an EMPIRE-11 deployment - an AI-powered business operations system with 
 **Daily Operations**: Execute DAILY_STANDUP missions for systematic coordination
 **Weekly Planning**: Conduct WEEKLY_PLANNING missions for strategic alignment
 **Quarterly Reviews**: Execute QUARTERLY_REVIEW missions for strategic evaluation
+
+### Technical Work Handoff Protocol
+
+When business planning identifies need for technical solutions:
+1. Create business requirements document (not technical specifications)
+2. Hand requirements to Agent-11 development team in separate technical project
+3. Track technical project progress in business project-plan.md
+4. Assess business impact of technical deliverables
+5. NEVER attempt technical implementation within EMPIRE-11
 
 ### Strategic Framework Integration
 
